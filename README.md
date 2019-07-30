@@ -1,8 +1,8 @@
 # SwordMasters of Ginaz!
 
 
-![Image of mapScreen](client/src/img/foroScre.png "Screen")
-![screen2](client/src/img/battleScreen.png "Screen2")
+![Image of mapScreen](src/img/foroScre.png "Screen")
+![screen2](src/img/battleScreen.png "Screen2")
 
 
 
@@ -69,6 +69,6 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 # Future Improvements
 Reduce unnecessary node modules.
 Swith to smaller images, JPEG, Etc...
-![perf6](client/src/img/ginazGame6PerformanceRank20July2019.PNG "July20_Performance6")
-![perf1](client/src/img/ginazPerformanceRank20July2019.PNG "July20_Performance1")
-![nodeModules](client/src/img/huge_node_modules.PNG "nodeModuleSIze")
+![perf6](src/img/ginazGame6PerformanceRank20July2019.PNG "July20_Performance6")
+![perf1](src/img/ginazPerformanceRank20July2019.PNG "July20_Performance1")
+![nodeModules](src/img/huge_node_modules.PNG "nodeModuleSIze")
