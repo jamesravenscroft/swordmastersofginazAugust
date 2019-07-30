@@ -6,7 +6,7 @@ import { Container, Row, Col } from "./components/Grid";
 import Modal from "./components/Modal/Modal";
 import Cancion from "./img/tameAlandPart3.mp3";
 
-
+import {Animated} from "react-animated-css";
 
 class Game3 extends Component {
 

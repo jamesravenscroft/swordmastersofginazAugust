@@ -7,6 +7,7 @@ import Modal from "./components/Modal/Modal";
 import Cancion from "./img/bloody.mp3";
 import "./stylesGame.css";
 import "./test.css";
+import {Animated} from "react-animated-css";
 
 class Game6 extends Component {
 
@@ -194,6 +195,8 @@ class Game6 extends Component {
               />
           <Row>
               <Col size="md-3">
+              <Animated animationIn="slideInLeft" animationOut="fadeOut" isVisible={true} animationInDuration="5500">
+    <div>
                 <DuncanIdaho
                 // style={{Bottom:"-15%", padding:0}}
                   archer={this.state.archer}
@@ -201,6 +204,7 @@ class Game6 extends Component {
                   pierce={this.state.pierce}                  
                   poweredUp={this.state.poweredUp}
                 />
+                </div></Animated>
               </Col>
               <Col size="md-9">
                 <BeastHarkonnen
@@ -212,6 +216,8 @@ class Game6 extends Component {
               </Col>
           </Row>
           <Row>
+          <Animated animationIn="slideInUp" animationOut="fadeOut" isVisible={true}  animationInDelay="5850" animationInDuration="7000">
+    <div>
           <BattleMenu
               playerShields = {this.state.player.shields}
               playerAttack = {this.state.player.attack}
@@ -226,6 +232,7 @@ class Game6 extends Component {
               }}
               cancion={this.state.cancion}
             />
+     </div></Animated>
           </Row>
           </div>
         </Container>

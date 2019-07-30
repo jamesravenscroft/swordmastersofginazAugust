@@ -5,7 +5,7 @@ import BattleMenu from "./components/BattleMenu";
 import { Container, Row, Col } from "./components/Grid";
 import Modal from "./components/Modal/Modal";
 import Cancion from "./img/tameAlandPart3.mp3";
-
+import {Animated} from "react-animated-css";
 
 
 class Game3 extends Component {
@@ -158,21 +158,27 @@ class Game3 extends Component {
         </Modal>
         <Container >
           <div >
-          <Row style={{marginTop:"-30%", }}>
-              <Col size="md-3">
+          <Row style={{marginTop:"-30%", position:"relative" }}>
+              <Col size="md-3" style={{marginTop:"-30%", position:"relative"}}>
+              <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true}>
+    <div>
                 <DuncanIdaho
                   archer={this.state.archer}
                   isDuncanAttacking={this.state.isDuncanAttacking}
                   pierce={this.state.pierce}
                 />
+    </div></Animated>
               </Col>
               <Col size="md-6"></Col>
               <Col size="md-3">
+              <Animated animationIn="fadeInDownBig" animationOut="fadeOut" isVisible={true}>
+    <div>
                 <SardaukarElite
                   pulsedGrunt={this.state.pulsedGrunt}
                   eliteResting={this.state.eliteResting}
                   isEliteAttacking={this.state.isEliteAttacking}
                 />                
+         </div></Animated>
               </Col>
           </Row>
           <Row>

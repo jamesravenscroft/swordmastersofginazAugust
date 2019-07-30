@@ -6,6 +6,7 @@ import BattleMenu from "./components/BattleMenu";
 import { Container, Row, Col } from "./components/Grid";
 import Modal from "./components/Modal/Modal";
 import "./test.css";
+import {Animated} from "react-animated-css";
 import Cancion from "./img/tameAlandPart2.mp3";
 
 

@@ -5,6 +5,7 @@ import BattleMenu from "./components/BattleMenu";
 import { Container, Row, Col } from "./components/Grid";
 import Modal from "./components/Modal/Modal";
 import "./test.css";
+import {Animated} from "react-animated-css";
 import Cancion from "./img/IronMaiden-ToTameLand8-Bit.mp3";
 
 class Game extends Component {
@@ -133,7 +134,7 @@ class Game extends Component {
   deathCheckEnemy = () => {
     if( this.state.enemy.shields === 0 || this.state.enemy.shields < 0) {
       console.log(`enemy is dead`);
-      let newMessage = `Enemy has been defeated, you gain experience`;
+      let newMessage = `You have eviscerated this deadly foe, you gain valuable experience`;
       sessionStorage.setItem("playerShields", (this.state.player.shields) + 400);
       sessionStorage.setItem("playerAttack", 125);
       sessionStorage.setItem("playerDefense", 50);
@@ -169,21 +170,27 @@ class Game extends Component {
           <div style={{marginTop:"-10%", position:"relative", zIndex:0}}>
             <Row>
               <Col size="md-3" >
+              <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true}>
+    <div>
                 <DuncanIdaho 
                   archer={this.state.archer}
                   isDuncanAttacking={this.state.isDuncanAttacking}
                   pierce={this.state.pierce}        
                 />
+                </div></Animated>
+              
               </Col>
               <Col size="md-6"></Col>
               <Col size="md-3">
-                <SardaukarGrunt style={{position:"relative", zIndex:0}}
+              <Animated animationIn="bounceInRight" animationOut="hinge" isVisible={true}>
+    <div> <SardaukarGrunt style={{position:"relative", zIndex:0}}
                 // so here you just pass the prop of the resting frame and if
                 //all goes well it should work
                 gruntResting={this.state.gruntResting}
                 isGruntAttacking={this.state.isGruntAttacking}
                 pulsedGrunt={this.state.pulsedGrunt} 
                 />                
+                </div></Animated>
               </Col>
             </Row>
             <Row>

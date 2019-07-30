@@ -6,6 +6,7 @@ import BattleMenu from "./components/BattleMenu";
 import { Container, Row, Col } from "./components/Grid";
 import Modal from "./components/Modal/Modal";
 import "./test.css";
+import {Animated} from "react-animated-css";
 import Cancion from "./img/tameAlandPart2.mp3";
 
 
@@ -171,25 +172,31 @@ class Game2 extends Component {
           <div style={{marginTop:"-10%", position:"relative", zIndex:0}}>
           <Row>
               <Col size="md-3">
+              <Animated animationIn="rotateInDownLeft" animationOut="fadeOut" isVisible={true}>
+    <div>
                 <DuncanIdaho
                   archer={this.state.archer}
                   isDuncanAttacking={this.state.isDuncanAttacking}
                   pierce={this.state.pierce}            
-                />
+                /></div></Animated>
               </Col>
               <Col size="md-6">
+              <Animated animationIn="lightSpeedIn" animationOut="fadeOut" isVisible={true}>
+    <div>
                 <SardaukarGrunt
                   gruntResting={this.state.gruntResting}
                   isGruntAttacking={this.state.isGruntAttacking}
                   pulsedGrunt={this.state.pulsedGrunt}
-                />
+                /></div></Animated>
               </Col>
               <Col size="md-3">
+              <Animated animationIn="rotateInDownRight" animationOut="fadeOut" isVisible={true}>
+    <div>
                 <SardaukarElite
                   eliteResting={this.state.eliteResting}
                   isEliteAttacking={this.state.isEliteAttacking}
                   pulsedGrunt={this.state.pulsedGrunt}
-                />
+                /></div></Animated>
               </Col>
           </Row>
           <Row>

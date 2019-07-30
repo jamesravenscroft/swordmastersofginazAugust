@@ -5,7 +5,7 @@ import BattleMenu from "./components/BattleMenu";
 import { Container, Row, Col } from "./components/Grid";
 import Modal from "./components/Modal/Modal";
 import Cancion from "./img/tameAlandPart4.mp3";
-
+import {Animated} from "react-animated-css";
 
 
 class Game4 extends Component {
@@ -155,33 +155,44 @@ class Game4 extends Component {
           <div style={{marginTop:"-10%", position:"relative", zIndex:0}}>
           <Row>
               <Col size="md-3">
+              <Animated animationIn="rotateInDownLeft" animationOut="fadeOut" isVisible={true}>
+    <div>
                 <DuncanIdaho
                   archer={this.state.archer}
                   isDuncanAttacking={this.state.isDuncanAttacking}
                   pierce={this.state.pierce}
-                />
+                /></div></Animated>
               </Col>
               <Col size="md-3">
+              <Animated animationIn="rotateInDownRight" animationOut="fadeOut" isVisible={true}>
+    <div>
                 <SardaukarGrunt
                 gruntResting={this.state.gruntResting}
                 isGruntAttacking={this.state.isGruntAttacking}
                 pulsedGrunt={this.state.pulsedGrunt}
                 />
+         </div></Animated>
               </Col>
               <Col size="md-3">
+              <Animated animationIn="rotateInDownRight" animationOut="fadeOut" isVisible={true}>
+    <div>
                 <SardaukarGrunt
                   gruntResting={this.state.gruntResting}
                   isGruntAttacking={this.state.isGruntAttacking}
                   pulsedGrunt={this.state.pulsedGrunt}                
 
                 />
+         </div></Animated>
               </Col>
               <Col size="md-3">
+              <Animated animationIn="tada" animationOut="fadeOut" isVisible={true}>
+    <div>
                 <SardaukarGrunt
                   gruntResting={this.state.gruntResting}
                   isGruntAttacking={this.state.isGruntAttacking}
                   pulsedGrunt={this.state.pulsedGrunt}                
                 />                
+         </div></Animated>
               </Col>
           </Row>
           <Row>
