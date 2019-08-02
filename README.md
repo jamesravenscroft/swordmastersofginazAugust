@@ -1,5 +1,5 @@
 # SwordMasters of Ginaz!
-
+#For Full Experience, download and run NPM start.
 
 ![Image of mapScreen](src/img/foroScre.png "Screen")
 ![screen2](src/img/battleScreen.png "Screen2")
