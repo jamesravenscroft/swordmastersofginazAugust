@@ -58,7 +58,13 @@ class Login extends React.Component {
                         <h2 className="combined"
                             style={{zIndex:100, position:relative, fontSize:50, marginTop:"-80%", marginLeft:"15%", width:"100%"}}
                         >Thanks to all who participated in DemoDay</h2><br>
-                        </br>
+                        </br><div>
+                        <img src={require("../src/img/demoday1.jpg")}
+                        style={{zIndex:150, position:relative, width:"30%",  marginTop:"-115%", marginLeft:"5%" }}
+                        />
+                            <img src={require("../src/img/demoday3.jpg")}
+                        style={{zIndex:150, position:relative, width:"30%",  marginTop:"-115%", marginLeft:"15%" }}
+                        /></div>
                             <h3
                                 className="combined"
                                 style={{zIndex:100, position:relative, marginTop:"-86%", marginLeft:"15%", width:"100%"}}

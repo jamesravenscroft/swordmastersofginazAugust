@@ -30,7 +30,7 @@ class MenuCurtain extends React.Component {
                                 <a href="/intro">New Game</a>
                                 <a href="/login">Login</a>
                                 <a href="/Store">Item Shop</a>
-                                <a href="/leaderBoard">Leader Board</a>
+                                <a href="LeaderBoard">Leader Board</a>
                             </div>
                         </div>
                        

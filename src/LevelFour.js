@@ -17,6 +17,7 @@ class LevelFour extends React.Component {
             link: "",
             message: "",
             // cancion: Cancion
+            upButtonHidden:false,
 
         }
     }
@@ -96,6 +97,7 @@ class LevelFour extends React.Component {
                     handleClickLeft={this.handleClickLeft}
                     handleClickRight={this.handleClickRight}
                     handleClickUp={this.handleClickUp}
+                    upButtonHidden={this.upButtonHidden}
                     // cancion={this.state.cancion}
                 />
                 </div>

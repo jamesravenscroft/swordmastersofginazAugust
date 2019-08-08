@@ -38,7 +38,10 @@ class Game extends Component {
       link: "",
       pulsedGrunt: false,
       pierce: false,
-      cancion: Cancion
+      cancion: Cancion,
+      upArrowHidden: true,
+      RightArrowHidden: true,
+      LeftArrowHidden: true,
     }
   };
 
@@ -204,6 +207,7 @@ class Game extends Component {
                 enemyAttack= {this.state.enemy.attack}
                 enemyDefense = {this.state.enemy.defense}  
                 cancion = {this.state.cancion}
+                style={{zIndex:10}}
               /> 
             </Row>
           </div>

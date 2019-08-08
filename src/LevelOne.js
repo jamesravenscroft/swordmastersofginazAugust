@@ -18,7 +18,8 @@ class LevelOneOne extends React.Component {
             link: "",
             message: "",
             cancion: Cancion,
-            // attackButton:buttonHidden,
+            attackButtonHidden:true,
+            attackPulseButtonHidden:true,
         }
 
     

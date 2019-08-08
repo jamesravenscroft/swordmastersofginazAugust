@@ -143,8 +143,25 @@ float: right
   float: right
 }
 
-.buttonsHidden{
+.AttackButtonHidden{
   visibility: hidden;
+}
+
+.AttackPButtonHidden{
+  visibility: hidden;
+}
+
+/* .upButtonHidden{
+  visibility: hidden;
+} */
+
+.rightButtonHidden{
+  visibility: hidden
+}
+
+
+.leftButtonHidden{
+  visibility: hidden
 }
 
 /*Beast Harkonnen transition*/

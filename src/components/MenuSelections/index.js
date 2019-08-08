@@ -5,7 +5,7 @@ const MenuSelect = () => {
     return (
         <div className="card" id="title">
             <Animated animationIn="fadeIn" animationOut="fadeOut" isVisible={true} animationInDelay="2250">
-    <div>
+    <div>   <h6><u>Full Screeen Desktop Version</u></h6>
             <ul id="menuul">
                 <li>
                     <a href="/intro">New Game</a>
@@ -18,6 +18,9 @@ const MenuSelect = () => {
                 </li>
                 <li>
                     <a href="/Store">Item Shop</a>
+                </li>
+                <li>
+                    <a href="https://vimeo.com/346965384">Trailer</a>
                 </li>
                 <li>
                     <a href="/thankyou">Credits</a>

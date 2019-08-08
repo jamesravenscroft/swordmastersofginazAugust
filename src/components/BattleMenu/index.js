@@ -12,7 +12,9 @@ function BattleMenu(props)  {
         <div>
             <div className="container">
                 <div className="row">
-                    <div className="col-sm-3">
+                    <div
+                      className={props.attackButtonHidden ? "col-sm-3" : "attackButtonHidden"}
+                    >
                         <button 
                             style={{fontSize:25,borderColor:"black", borderWidth:4, width:"80%"}}
                             className="btn btn-warning"
@@ -37,7 +39,11 @@ function BattleMenu(props)  {
                         </ul>
                     </div>
                     <div className="col-sm-3">
-                        <div className="container">
+                        <div 
+                        className={props.attackButtonHidden ? "container" : "upButtonHidden"}
+                        
+                        
+                        >
                             <div className="row"
                                 style={{marginLeft:60}}
                             >

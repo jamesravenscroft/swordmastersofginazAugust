@@ -156,7 +156,7 @@ class Game6 extends Component {
   deathCheckEnemy = () => {
     if( this.state.enemy.shields === 0 || this.state.enemy.shields < 0) {
       console.log(`enemy is dead`);
-      let newMessage = "Beast is dead";
+      let newMessage = "Beast has been defeated. He escapes his emminent demise as sudden blast of flame creates a barrier between you. ";
       this.setState({fireExploding:true});
       this.setState({isShowing: true});
       this.setState({message: newMessage});
