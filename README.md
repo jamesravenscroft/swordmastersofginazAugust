@@ -1,26 +1,22 @@
 ## Currently reviewing Crowd Funded and other Funding.
 
 # Rewards:
-Exclusive Discord Rank
-----
-Digital Game Download for PC
-Digital Download of OST
----
-Digital Download of Art Book
-Early Access to Game Builds
----
-Name in Credits
-Become an Interactive NPC in the Game
----
-Receive a Pixel Art Portrait of you that will appear in-game
-Associate Producer Credit
----
-Co-Design an Item
-Co-Design an in-game enemy
----
-Co-Design a skill tree node
-Launch Party Invite
----
+Exclusive Discord Rank.........
+Digital Game Download for PC...........
+Digital Download of OST..........
+
+Digital Download of Art Book.......
+Early Access to Game Builds........
+Name in Credits..............
+Become an Interactive NPC in the Game.........
+
+Receive a Pixel Art Portrait of you that will appear in-game.........
+Associate Producer Credit..............
+
+Co-Design an Item............
+Co-Design an in-game enemy.........
+Co-Design a skill tree node............
+Launch Party Invite!
 
 # SwordMasters of Ginaz!
 #For Full Experience, download and run NPM start.
