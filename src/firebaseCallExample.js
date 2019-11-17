@@ -2,10 +2,10 @@
 $(document).ready(function(){
 var config={
     apiKey:"",
-    authDomain:"ftrainscheduler",
+    authDomain:"swordmastersAugust",
     databaseURL: "https://trainscheduler-b6ee0.firebaseio.com/",
-    projectId: "trainscheduler-b6ee0",
-    storageBucket: "fantasticVoyage",
+    projectId: "swordmasters-august",
+    storageBucket: "swordmasters-august",
     messagingSenderId:"2361693643"
 };
 
