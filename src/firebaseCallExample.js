@@ -1,7 +1,7 @@
 //initialize firebase, set variables
 $(document).ready(function(){
 var config={
-    apiKey:"",
+    apiKey:"ad20580ede99d000a9d0eadfdf7d1af3175c58f8",
     authDomain:"swordmastersAugust",
     databaseURL: "https://swordmasters-august.firebaseio.com/",
     projectId: "swordmasters-august",
