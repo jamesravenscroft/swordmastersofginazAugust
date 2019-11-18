@@ -42,14 +42,14 @@ database.ref().on("child_added", function(childSnapshot){
     var currentRank = moment(childSnapshot.val().email, "hh:mm").subtract(1, "years");
     //difference between current and  morningTrain
     var diffPoints= moment().diff(moment(currentRank), "minutes");
-    var remainder = diffTime % childSnapshot.val().frequency;
-    var pointsAway = childSnapshot.val().frequency - remainder;
+    var remainder = diffTime % childSnapshot.val().rank;
+    var pointsAway = childSnapshot.val().rank - remainder;
 var nextRank = moment().add(pointsAway, "minutes");
 next moment(nextRank).format("hh:mm");
 //display infomania
 $("#add-row").append("<tr><td>" + childSnapshot.val().name +
-"</td><td>" + childSnapshot.val().destination +
-"</td><td>" + childSnapshot.val().frequency +
+"</td><td>" + childSnapshot.val().email +
+"</td><td>" + childSnapshot.val().rank +
 "</td><td>" + nextRank + 
 "</td><td>" + pointAway + "</td></tr>");
 
