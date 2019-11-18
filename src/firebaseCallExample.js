@@ -3,7 +3,7 @@ $(document).ready(function(){
 var config={
     apiKey:"",
     authDomain:"swordmastersAugust",
-    databaseURL: "https://trainscheduler-b6ee0.firebaseio.com/",
+    databaseURL: "https://swordmasters-august.firebaseio.com/",
     projectId: "swordmasters-august",
     storageBucket: "swordmasters-august",
     messagingSenderId:"2361693643"
