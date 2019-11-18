@@ -28,7 +28,7 @@ database.ref().push({
     userName:userName,
     email: email,
     points: points,
-    rank: rank
+    rank: rank,
     dateAdded: firebase.database.ServerValue.TIMESTAMP
 });
 $("form")[0].reset();
